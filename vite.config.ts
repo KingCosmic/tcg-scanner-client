@@ -8,7 +8,7 @@ const host = process.env.TAURI_DEV_HOST;
 // https://vite.dev/config/
 export default defineConfig(async () => ({
   plugins: [preact(), tailwindcss()],
-  base: 'tcg-scanner-client', // only used in gh-pages deploy
+  base: 'tcg-scanner-client/docs', // only used in gh-pages deploy
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
