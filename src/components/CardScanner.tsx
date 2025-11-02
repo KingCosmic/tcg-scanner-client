@@ -24,7 +24,7 @@ interface ExtractedCard {
   selected?: boolean
 }
 
-export default function CardDetector({ modelPath = `${import.meta.env.BASE_URL}model/model.json` }: PokemonCardDetectorProps) {
+export default function CardDetector({ modelPath = `${import.meta.env.BASE_URL}/model/model.json` }: PokemonCardDetectorProps) {
 
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [extractedCards, setExtractedCards] = useState<ExtractedCard[]>([])
